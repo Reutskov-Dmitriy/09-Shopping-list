@@ -1,0 +1,112 @@
+.modal__panel {
+  width: 793px;
+  height: 507px;
+  margin: auto;
+  border: 1px solid black;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-style: normal;
+}
+
+.modal__header,
+.modal-footer {
+  color: #ff8984;
+  text-align: center;
+  background-color: #4a4f56;
+}
+
+/* HEADER  */
+
+.modal__header {
+  width: 100%;
+  height: 82px;
+  padding: 19px 0px 12px 0px;
+}
+
+.modal__header > h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal__header > p {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+/* Main */
+
+main {
+  padding: 20px 0px 45px 0px;
+  background-color: #3b3f45;
+}
+.modal__shoppingList {
+  max-width: 534px;
+  max-height: 100%;
+  margin: auto;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #3b3f45;
+}
+form > div:nth-child(odd) {
+  background-color: #88839e;
+}
+form > div:nth-child(even) {
+  background-color: #7a7593;
+}
+.form__checkbox {
+  width: 100%;
+  height: 45px;
+  display: flex;
+
+  align-items: center;
+}
+input {
+  margin: 0px 16px 0px 12px;
+  width: 19px;
+  height: 19px;
+}
+.form__checkbox > label {
+  width: 100%;
+  height: auto;
+}
+
+label > span {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+form > div:hover,
+form > div:focus {
+  background-color: #625e77;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  transition: all 0.1s ease-in;
+}
+.form__checkbox:active {
+  background-color: #ff8984;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #9b96ac;
+  /* box-shadow: 0px 3px 0px #646a74; */
+}
+
+/* ADD CONTENT '(,)'   .form__checkbox */
+
+label > span::before {
+  content: "(";
+}
+label > span::after {
+  content: ")";
+}
+/* ------------------------------- */
+/* ----------------------------------------- */
+.modal-footer {
+  margin-top: 45px;
+  height: 45px;
+  width: 100%;
+  padding-top: 12px;
+}
